@@ -6,6 +6,7 @@ import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
 import img1 from './htmlCss.jpg'
+import img2 from './salary.jpg'
 import {
   Box,
   GridList,
@@ -57,10 +58,10 @@ const list = {
     },
     {
       img:
-        "https://cdn.pixabay.com/photo/2017/02/08/17/24/butterfly-2049567_960_720.jpg",
-      link: "...1",
+        `${img2}`,
+      link: "https://shaxqq.github.io/salary/index.html",
       title: "Technologies:",
-      text: "HTML/CSS, jQuery",
+      text: "HTML/CSS, JS",
     },
     {
       img:
