@@ -6,14 +6,13 @@ import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
 import img1 from './htmlCss.jpg'
-import img2 from './salary.jpg'
+import img2 from './recipe.jpg'
+import img3 from './bulletinboard.jpg'
 import {
   Box,
-  GridList,
   Typography,
   makeStyles,
   Grid,
-  GridListTile,
   Link,
 } from "@material-ui/core";
 
@@ -32,20 +31,20 @@ const list = {
   skills: [
     {
       name: "Technologies:",
-      text: "HTML, CSS, AJAX, Bootstrap, Material-UI, Sass, JSON, LESS",
+      text: "HTML, CSS, Bootstrap, Material-UI, Sass, JSON, LESS",
     },
     {
       name: "Methodologies:",
       text:
-        "Atomic CSS, BEM Tools:  Gulp, Git, Photoshop, Trello, Webpack, Grunt, Asana, Zeplin, Sketch, GSAP, ScrollMagic ",
+        "Atomic CSS, BEM Tools:  Gulp, Git, Photoshop, GSAP, ScrollMagic ",
     },
     { name: "Programming languages:", text: "JavaScript" },
-    { name: "Operating systems:", text: "Windows, Linux, MacOs" },
+    { name: "Operating systems:", text: "Windows, Linux" },
     {
       name: "Management methodologies:",
       text: "Scrum, Agile, Kanban, Waterfall",
     },
-    { name: "RDBMS:", text: "MS SQL Server" },
+    { name: "DBMS:", text: "mongoDB" },
     { name: "Languages:", text: "Ukrainian, Russian, English (Intermediate)" },
   ],
   expirience: [
@@ -59,24 +58,24 @@ const list = {
     {
       img:
         `${img2}`,
-      link: "https://shaxqq.github.io/salary/index.html",
+      link: "https://shaxqq.github.io/layaut/index.html",
       title: "Technologies:",
-      text: "HTML/CSS, JS",
+      text: "HTML/CSS, Slick slider",
     },
     {
       img:
-        "https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292_960_720.jpg",
-      link: "...2",
-      title: "Technologies:",
-      text: "HTML/CSS",
-    },
-    {
-      img:
-        "https://cdn.pixabay.com/photo/2010/12/13/10/05/background-2277_960_720.jpg",
-      link: "...3",
+        `${img3}`,
+      link: "https://buletinboardreact.herokuapp.com/",
       title: "Technologies:",
       text: "HTML/CSS, React",
     },
+    // {
+    //   img:
+    //     "",
+    //   link: "...3",
+    //   title: "Technologies:",
+    //   text: "HTML/CSS, React",
+    // },
   ],
   education: [
     {
@@ -207,7 +206,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0,
     
     "&:hover": {
-      background: "rgba(35, 35, 35, 0.6)",
+      background: "rgba(35, 35, 35, 0.9)",
       height: "100%",
       opacity: 1,
       "&::before": {
