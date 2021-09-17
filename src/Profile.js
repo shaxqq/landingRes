@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
       background: "rgba(35, 35, 35, .8)",
       position: "absolute",
       width: "100%",
-      height: "100%",
+      height: "100vh",
       zIndex: 0,
     },
   },
