@@ -33,8 +33,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     alignItems: "center",
     zIndex: 1,
-    [theme.breakpoints.up('xs', 'sm', 'md')]: {
+    [theme.breakpoints.up('xs')]: {
       flexDirection: 'column',
+      justifyContent: "space-between",
+    },
+    [theme.breakpoints.up('sm', 'md')]: {
+      flexDirection: 'row',
       justifyContent: "space-around",
     },
     [theme.breakpoints.up('lg')]: {
