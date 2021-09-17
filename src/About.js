@@ -167,7 +167,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignSelf: "center",
   },
-
+  skillsBody: {
+    [theme.breakpoints.down("xs", "sm",)]: {
+      maxWidth: "100%",
+      flexBasis: "100%",
+    },
+    
+  },
   skillsTitle: {
     padding: theme.spacing(1),
     color: "#e0a80d",
@@ -318,7 +324,7 @@ export const About = () => {
           <Grid container spacing={5}>
             {list.skills.map((child) => {
               return (
-                <Grid item xs={4} key={child.text}>
+                <Grid item xs={4} key={child.text} className={classes.skillsBody}>
                   <Typography className={classes.skillsTitle}>
                     {child.name}
                   </Typography>
